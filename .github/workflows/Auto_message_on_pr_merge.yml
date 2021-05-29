@@ -1,9 +1,8 @@
 name: congratulations  Message on PR merge
 
 on:
-  push:
-    branches:
-      - master
+  pull_request_target:
+    types: [closed]
 
 jobs:
   auto-response:
